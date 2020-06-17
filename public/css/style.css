@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'musiqwik';
+    src: url('../fonts/musiqwik.woff2') format('woff2'),
+         url('../fonts/musiqwik.woff') format('woff');
+}
+
+:root {
+    --main-bg-color: rgba(206, 181, 183, 1);
+    --main-bg-hover-color : rgba(206, 181, 183, 0.7);
+  }
+  
+  #div1 {
+    background-color: var(--main-bg-color); 
+  }
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+.navbar{
+    background-color: var(--main-bg-color); 
+}
+
+.btn-primary, .btn-primary:visited{
+    background-color: var(--main-bg-color); 
+    border: 0;
+}
+
+.btn-primary:hover{
+    background-color: var(--main-bg-hover-color); 
+    border: 0;
+}
+
+.btn-primary:disabled{
+    background-color: grey;
+    cursor: default;
+}
+
+#feedback{
+    width: 4vw;
+    visibility: hidden;
+}
+
+.dp{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    height: 10vw;
+    line-height: 10vw;
+}
+
+.dg{
+    cursor: pointer;
+    text-align: center;
+}
+
+.dg-musiqwik{
+    cursor: pointer;
+    text-align: center;
+    font-family: musiqwik;
+    font-size: 4vw;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--main-bg-color); 
+    padding: 1em;
+}
+
+.musiqwik{
+    font-family: musiqwik;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+i{
+    font-size: 1.8em;
+}
